@@ -23,3 +23,9 @@
 
   - name: Clean up
     file: state=absent path={{java_archive}}
+
+  - name: agregar un usuario ansible.
+    user:
+     name: ansible
+     comment: Usuario Ansible
+     group: admin
